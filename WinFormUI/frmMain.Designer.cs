@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlNavigation = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
@@ -36,10 +37,11 @@
             this.btnMainPage = new System.Windows.Forms.Button();
             this.lblCurrentDate = new System.Windows.Forms.Label();
             this.lblActiveUser = new System.Windows.Forms.Label();
-            this.lblAppName = new System.Windows.Forms.Label();
-            this.lblLogo = new System.Windows.Forms.Label();
             this.pnlNavItems = new System.Windows.Forms.Panel();
+            this.lblAppName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlNavigation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNavigation
@@ -47,6 +49,8 @@
             this.pnlNavigation.BackColor = System.Drawing.Color.Transparent;
             this.pnlNavigation.BackgroundImage = global::WinFormUI.Properties.Resources.background;
             this.pnlNavigation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlNavigation.Controls.Add(this.lblAppName);
+            this.pnlNavigation.Controls.Add(this.pictureBox1);
             this.pnlNavigation.Controls.Add(this.btnClose);
             this.pnlNavigation.Controls.Add(this.btnAccount);
             this.pnlNavigation.Controls.Add(this.btnUpdateMeal);
@@ -54,8 +58,6 @@
             this.pnlNavigation.Controls.Add(this.btnMainPage);
             this.pnlNavigation.Controls.Add(this.lblCurrentDate);
             this.pnlNavigation.Controls.Add(this.lblActiveUser);
-            this.pnlNavigation.Controls.Add(this.lblAppName);
-            this.pnlNavigation.Controls.Add(this.lblLogo);
             this.pnlNavigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNavigation.Location = new System.Drawing.Point(0, 0);
             this.pnlNavigation.Name = "pnlNavigation";
@@ -64,12 +66,12 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Crimson;
-            this.btnClose.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(196, 405);
+            this.btnClose.Location = new System.Drawing.Point(191, 405);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(73, 30);
+            this.btnClose.Size = new System.Drawing.Size(78, 33);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Çıkış";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -84,7 +86,7 @@
             this.btnAccount.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.btnAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccount.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Location = new System.Drawing.Point(48, 329);
             this.btnAccount.Name = "btnAccount";
@@ -104,7 +106,7 @@
             this.btnUpdateMeal.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.btnUpdateMeal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnUpdateMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateMeal.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateMeal.ForeColor = System.Drawing.Color.White;
             this.btnUpdateMeal.Location = new System.Drawing.Point(48, 263);
             this.btnUpdateMeal.Name = "btnUpdateMeal";
@@ -124,7 +126,7 @@
             this.btnAddMeal.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.btnAddMeal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnAddMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMeal.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddMeal.ForeColor = System.Drawing.Color.White;
             this.btnAddMeal.Location = new System.Drawing.Point(48, 197);
             this.btnAddMeal.Name = "btnAddMeal";
@@ -145,7 +147,7 @@
             this.btnMainPage.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.btnMainPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMainPage.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMainPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMainPage.ForeColor = System.Drawing.Color.White;
             this.btnMainPage.Location = new System.Drawing.Point(48, 131);
             this.btnMainPage.Name = "btnMainPage";
@@ -160,11 +162,11 @@
             // 
             this.lblCurrentDate.AutoSize = true;
             this.lblCurrentDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrentDate.Font = new System.Drawing.Font("ISOCPEUR", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCurrentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCurrentDate.ForeColor = System.Drawing.Color.Black;
             this.lblCurrentDate.Location = new System.Drawing.Point(12, 405);
             this.lblCurrentDate.Name = "lblCurrentDate";
-            this.lblCurrentDate.Size = new System.Drawing.Size(38, 16);
+            this.lblCurrentDate.Size = new System.Drawing.Size(41, 15);
             this.lblCurrentDate.TabIndex = 0;
             this.lblCurrentDate.Text = "Tarih :";
             // 
@@ -172,37 +174,13 @@
             // 
             this.lblActiveUser.AutoSize = true;
             this.lblActiveUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblActiveUser.Font = new System.Drawing.Font("ISOCPEUR", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblActiveUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblActiveUser.ForeColor = System.Drawing.Color.Black;
             this.lblActiveUser.Location = new System.Drawing.Point(12, 425);
             this.lblActiveUser.Name = "lblActiveUser";
-            this.lblActiveUser.Size = new System.Drawing.Size(51, 16);
+            this.lblActiveUser.Size = new System.Drawing.Size(60, 15);
             this.lblActiveUser.TabIndex = 0;
             this.lblActiveUser.Text = "Kullanıcı :";
-            // 
-            // lblAppName
-            // 
-            this.lblAppName.AutoSize = true;
-            this.lblAppName.BackColor = System.Drawing.Color.Transparent;
-            this.lblAppName.Font = new System.Drawing.Font("ISOCPEUR", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAppName.ForeColor = System.Drawing.Color.White;
-            this.lblAppName.Location = new System.Drawing.Point(52, 75);
-            this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(175, 31);
-            this.lblAppName.TabIndex = 0;
-            this.lblAppName.Text = "UYGULAMA İSMİ";
-            // 
-            // lblLogo
-            // 
-            this.lblLogo.AutoSize = true;
-            this.lblLogo.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogo.Font = new System.Drawing.Font("ISOCPEUR", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(107, 25);
-            this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(65, 31);
-            this.lblLogo.TabIndex = 0;
-            this.lblLogo.Text = "LOGO";
             // 
             // pnlNavItems
             // 
@@ -212,6 +190,29 @@
             this.pnlNavItems.Size = new System.Drawing.Size(675, 450);
             this.pnlNavItems.TabIndex = 2;
             // 
+            // lblAppName
+            // 
+            this.lblAppName.AutoSize = true;
+            this.lblAppName.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAppName.ForeColor = System.Drawing.Color.Olive;
+            this.lblAppName.Location = new System.Drawing.Point(88, 86);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(99, 33);
+            this.lblAppName.TabIndex = 7;
+            this.lblAppName.Text = "RUFiT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinFormUI.Properties.Resources.MainLogo;
+            this.pictureBox1.InitialImage = global::WinFormUI.Properties.Resources.MainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(95, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(85, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -220,20 +221,21 @@
             this.ClientSize = new System.Drawing.Size(950, 450);
             this.Controls.Add(this.pnlNavItems);
             this.Controls.Add(this.pnlNavigation);
-            this.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(966, 489);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(966, 489);
             this.Name = "frmMain";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kalori Takip Taslak";
+            this.Text = "RUFIT";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlNavigation.ResumeLayout(false);
             this.pnlNavigation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,8 +248,6 @@
         private Button btnUpdateMeal;
         private Button btnAddMeal;
         private Button btnMainPage;
-        private Label lblAppName;
-        private Label lblLogo;
         private ListView listView1;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
@@ -259,5 +259,7 @@
         private Panel pnlNavItems;
         private Label lblCurrentDate;
         private Label lblActiveUser;
+        private Label lblAppName;
+        private PictureBox pictureBox1;
     }
 }

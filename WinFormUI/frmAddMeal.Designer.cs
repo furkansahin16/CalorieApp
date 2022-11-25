@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblHeader = new System.Windows.Forms.Label();
@@ -64,11 +65,11 @@
             // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("ISOCPEUR", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeader.ForeColor = System.Drawing.Color.Black;
             this.lblHeader.Location = new System.Drawing.Point(267, 9);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(125, 31);
+            this.lblHeader.Size = new System.Drawing.Size(161, 29);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "ÖĞÜN EKLE";
             // 
@@ -78,7 +79,7 @@
             this.cmbMealType.FormattingEnabled = true;
             this.cmbMealType.Location = new System.Drawing.Point(12, 59);
             this.cmbMealType.Name = "cmbMealType";
-            this.cmbMealType.Size = new System.Drawing.Size(192, 29);
+            this.cmbMealType.Size = new System.Drawing.Size(192, 28);
             this.cmbMealType.TabIndex = 1;
             // 
             // cmbMealCategory
@@ -87,7 +88,7 @@
             this.cmbMealCategory.FormattingEnabled = true;
             this.cmbMealCategory.Location = new System.Drawing.Point(12, 129);
             this.cmbMealCategory.Name = "cmbMealCategory";
-            this.cmbMealCategory.Size = new System.Drawing.Size(157, 29);
+            this.cmbMealCategory.Size = new System.Drawing.Size(157, 28);
             this.cmbMealCategory.TabIndex = 3;
             this.cmbMealCategory.SelectedIndexChanged += new System.EventHandler(this.cmbMealCategory_SelectedIndexChanged);
             // 
@@ -97,7 +98,7 @@
             this.cmbFood.FormattingEnabled = true;
             this.cmbFood.Location = new System.Drawing.Point(185, 129);
             this.cmbFood.Name = "cmbFood";
-            this.cmbFood.Size = new System.Drawing.Size(157, 29);
+            this.cmbFood.Size = new System.Drawing.Size(157, 28);
             this.cmbFood.TabIndex = 4;
             this.cmbFood.SelectedIndexChanged += new System.EventHandler(this.cmbFood_SelectedIndexChanged);
             this.cmbFood.SelectedValueChanged += new System.EventHandler(this.nmdPortion_ValueChanged);
@@ -106,11 +107,10 @@
             // 
             this.lblDataGridView.AutoSize = true;
             this.lblDataGridView.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataGridView.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDataGridView.ForeColor = System.Drawing.Color.Black;
             this.lblDataGridView.Location = new System.Drawing.Point(264, 170);
             this.lblDataGridView.Name = "lblDataGridView";
-            this.lblDataGridView.Size = new System.Drawing.Size(131, 21);
+            this.lblDataGridView.Size = new System.Drawing.Size(160, 20);
             this.lblDataGridView.TabIndex = 0;
             this.lblDataGridView.Text = "GÜNLÜK ÖĞÜNLER";
             // 
@@ -131,17 +131,25 @@
             this.clmPiece,
             this.clmCalorie,
             this.clmId});
-            this.dgvDailyReport.Location = new System.Drawing.Point(154, 203);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDailyReport.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvDailyReport.Location = new System.Drawing.Point(155, 207);
             this.dgvDailyReport.MultiSelect = false;
             this.dgvDailyReport.Name = "dgvDailyReport";
             this.dgvDailyReport.ReadOnly = true;
             this.dgvDailyReport.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Format = "N0";
-            dataGridViewCellStyle4.NullValue = null;
-            this.dgvDailyReport.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            this.dgvDailyReport.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDailyReport.RowTemplate.Height = 40;
             this.dgvDailyReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDailyReport.Size = new System.Drawing.Size(501, 231);
+            this.dgvDailyReport.Size = new System.Drawing.Size(501, 220);
             this.dgvDailyReport.TabIndex = 3;
             this.dgvDailyReport.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvDailyReport_CellPainting);
             this.dgvDailyReport.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvDailyReport_DataError);
@@ -202,13 +210,13 @@
             // 
             this.lstMeal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.lstMeal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstMeal.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lstMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstMeal.ForeColor = System.Drawing.Color.White;
             this.lstMeal.FormattingEnabled = true;
-            this.lstMeal.ItemHeight = 21;
-            this.lstMeal.Location = new System.Drawing.Point(12, 203);
+            this.lstMeal.ItemHeight = 20;
+            this.lstMeal.Location = new System.Drawing.Point(12, 207);
             this.lstMeal.Name = "lstMeal";
-            this.lstMeal.Size = new System.Drawing.Size(123, 231);
+            this.lstMeal.Size = new System.Drawing.Size(128, 220);
             this.lstMeal.TabIndex = 4;
             this.lstMeal.SelectedIndexChanged += new System.EventHandler(this.lstMeal_SelectedIndexChanged);
             // 
@@ -251,7 +259,7 @@
             this.btnAddMealType.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAddMealType.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnAddMealType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMealType.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddMealType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddMealType.ForeColor = System.Drawing.Color.White;
             this.btnAddMealType.Location = new System.Drawing.Point(217, 59);
             this.btnAddMealType.Name = "btnAddMealType";
@@ -276,7 +284,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(38, 29);
             this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "-";
+            this.btnDelete.Text = "x";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -294,7 +302,7 @@
             0,
             0});
             this.nmdPortion.Name = "nmdPortion";
-            this.nmdPortion.Size = new System.Drawing.Size(85, 27);
+            this.nmdPortion.Size = new System.Drawing.Size(85, 26);
             this.nmdPortion.TabIndex = 5;
             this.nmdPortion.Value = new decimal(new int[] {
             100,
@@ -307,11 +315,11 @@
             // 
             this.lblGram.AutoSize = true;
             this.lblGram.BackColor = System.Drawing.Color.Transparent;
-            this.lblGram.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblGram.ForeColor = System.Drawing.Color.Black;
-            this.lblGram.Location = new System.Drawing.Point(360, 107);
+            this.lblGram.Location = new System.Drawing.Point(360, 109);
             this.lblGram.Name = "lblGram";
-            this.lblGram.Size = new System.Drawing.Size(48, 19);
+            this.lblGram.Size = new System.Drawing.Size(46, 16);
             this.lblGram.TabIndex = 0;
             this.lblGram.Text = "Gram :";
             // 
@@ -319,11 +327,11 @@
             // 
             this.lblFood.AutoSize = true;
             this.lblFood.BackColor = System.Drawing.Color.Transparent;
-            this.lblFood.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFood.ForeColor = System.Drawing.Color.Black;
-            this.lblFood.Location = new System.Drawing.Point(185, 107);
+            this.lblFood.Location = new System.Drawing.Point(185, 109);
             this.lblFood.Name = "lblFood";
-            this.lblFood.Size = new System.Drawing.Size(57, 19);
+            this.lblFood.Size = new System.Drawing.Size(56, 16);
             this.lblFood.TabIndex = 0;
             this.lblFood.Text = "Yemek :";
             // 
@@ -331,11 +339,11 @@
             // 
             this.lblCategory.AutoSize = true;
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
-            this.lblCategory.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCategory.ForeColor = System.Drawing.Color.Black;
-            this.lblCategory.Location = new System.Drawing.Point(12, 107);
+            this.lblCategory.Location = new System.Drawing.Point(12, 109);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(63, 19);
+            this.lblCategory.Size = new System.Drawing.Size(60, 16);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Kategori:";
             // 
@@ -343,11 +351,11 @@
             // 
             this.lblCalorieCal.AutoSize = true;
             this.lblCalorieCal.BackColor = System.Drawing.Color.Transparent;
-            this.lblCalorieCal.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCalorieCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCalorieCal.ForeColor = System.Drawing.Color.Black;
             this.lblCalorieCal.Location = new System.Drawing.Point(453, 136);
             this.lblCalorieCal.Name = "lblCalorieCal";
-            this.lblCalorieCal.Size = new System.Drawing.Size(57, 19);
+            this.lblCalorieCal.Size = new System.Drawing.Size(51, 16);
             this.lblCalorieCal.TabIndex = 0;
             this.lblCalorieCal.Text = "0 Kalori";
             // 
@@ -355,11 +363,11 @@
             // 
             this.lblMealType.AutoSize = true;
             this.lblMealType.BackColor = System.Drawing.Color.Transparent;
-            this.lblMealType.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMealType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMealType.ForeColor = System.Drawing.Color.Black;
-            this.lblMealType.Location = new System.Drawing.Point(12, 37);
+            this.lblMealType.Location = new System.Drawing.Point(12, 39);
             this.lblMealType.Name = "lblMealType";
-            this.lblMealType.Size = new System.Drawing.Size(47, 19);
+            this.lblMealType.Size = new System.Drawing.Size(45, 16);
             this.lblMealType.TabIndex = 0;
             this.lblMealType.Text = "Öğün :";
             // 
@@ -387,7 +395,7 @@
             this.Controls.Add(this.lblDataGridView);
             this.Controls.Add(this.lblHeader);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(675, 450);
             this.MinimumSize = new System.Drawing.Size(675, 450);

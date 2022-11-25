@@ -61,7 +61,6 @@
             this.pnlMainPage.Controls.Add(this.panel3);
             this.pnlMainPage.Controls.Add(this.panel2);
             this.pnlMainPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainPage.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pnlMainPage.Location = new System.Drawing.Point(0, 0);
             this.pnlMainPage.MaximumSize = new System.Drawing.Size(675, 450);
             this.pnlMainPage.MinimumSize = new System.Drawing.Size(675, 450);
@@ -74,11 +73,11 @@
             this.llbWebPage.AutoSize = true;
             this.llbWebPage.BackColor = System.Drawing.Color.Transparent;
             this.llbWebPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.llbWebPage.Font = new System.Drawing.Font("ISOCPEUR", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.llbWebPage.Location = new System.Drawing.Point(124, 68);
+            this.llbWebPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llbWebPage.Location = new System.Drawing.Point(102, 72);
             this.llbWebPage.Name = "llbWebPage";
             this.llbWebPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.llbWebPage.Size = new System.Drawing.Size(426, 48);
+            this.llbWebPage.Size = new System.Drawing.Size(454, 48);
             this.llbWebPage.TabIndex = 1;
             this.llbWebPage.TabStop = true;
             this.llbWebPage.Text = "UYGULAMA HAKKINDA DETAYLI BİLGİ ALMAK İÇİN\r\nWEB SAYFAMIZI ZİYARET EDİNİZ";
@@ -89,23 +88,24 @@
             // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("ISOCPEUR", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeader.ForeColor = System.Drawing.Color.Black;
-            this.lblHeader.Location = new System.Drawing.Point(102, 19);
+            this.lblHeader.Location = new System.Drawing.Point(186, 20);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(471, 31);
+            this.lblHeader.Size = new System.Drawing.Size(303, 29);
             this.lblHeader.TabIndex = 0;
-            this.lblHeader.Text = "KALORİ TAKİP UYGULAMASINA HOŞ GELDİNİZ";
+            this.lblHeader.Text = "RUFİT\'E HOŞ GELDİNİZ.";
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.lswLastFoods);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.lblLastMealDate);
             this.panel3.Controls.Add(this.lblLastMealName);
-            this.panel3.Location = new System.Drawing.Point(12, 136);
+            this.panel3.Location = new System.Drawing.Point(0, 143);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(327, 311);
+            this.panel3.Size = new System.Drawing.Size(331, 305);
             this.panel3.TabIndex = 3;
             // 
             // lswLastFoods
@@ -117,12 +117,14 @@
             this.clmFoodName,
             this.clmPortion,
             this.clmCalorie});
+            this.lswLastFoods.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lswLastFoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lswLastFoods.ForeColor = System.Drawing.Color.White;
             this.lswLastFoods.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lswLastFoods.Location = new System.Drawing.Point(0, 119);
+            this.lswLastFoods.Location = new System.Drawing.Point(0, 109);
             this.lswLastFoods.MultiSelect = false;
             this.lswLastFoods.Name = "lswLastFoods";
-            this.lswLastFoods.Size = new System.Drawing.Size(324, 183);
+            this.lswLastFoods.Size = new System.Drawing.Size(327, 192);
             this.lswLastFoods.TabIndex = 3;
             this.lswLastFoods.UseCompatibleStateImageBehavior = false;
             this.lswLastFoods.View = System.Windows.Forms.View.Details;
@@ -130,7 +132,7 @@
             // clmFood
             // 
             this.clmFood.Text = "Kategori";
-            this.clmFood.Width = 70;
+            this.clmFood.Width = 80;
             // 
             // clmFoodName
             // 
@@ -151,12 +153,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("ISOCPEUR", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(5);
-            this.label3.Size = new System.Drawing.Size(156, 31);
+            this.label3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.label3.Size = new System.Drawing.Size(197, 30);
             this.label3.TabIndex = 0;
             this.label3.Text = "SON EKLENEN ÖĞÜN";
             // 
@@ -165,9 +167,9 @@
             this.lblLastMealDate.AutoSize = true;
             this.lblLastMealDate.BackColor = System.Drawing.Color.Transparent;
             this.lblLastMealDate.ForeColor = System.Drawing.Color.Black;
-            this.lblLastMealDate.Location = new System.Drawing.Point(13, 49);
+            this.lblLastMealDate.Location = new System.Drawing.Point(10, 37);
             this.lblLastMealDate.Name = "lblLastMealDate";
-            this.lblLastMealDate.Size = new System.Drawing.Size(55, 21);
+            this.lblLastMealDate.Size = new System.Drawing.Size(66, 20);
             this.lblLastMealDate.TabIndex = 0;
             this.lblLastMealDate.Text = "TARİH :";
             // 
@@ -176,34 +178,35 @@
             this.lblLastMealName.AutoSize = true;
             this.lblLastMealName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastMealName.ForeColor = System.Drawing.Color.Black;
-            this.lblLastMealName.Location = new System.Drawing.Point(13, 83);
+            this.lblLastMealName.Location = new System.Drawing.Point(10, 73);
             this.lblLastMealName.Name = "lblLastMealName";
-            this.lblLastMealName.Size = new System.Drawing.Size(51, 21);
+            this.lblLastMealName.Size = new System.Drawing.Size(65, 20);
             this.lblLastMealName.TabIndex = 0;
             this.lblLastMealName.Text = "ÖĞÜN :";
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblDailyReport);
             this.panel2.Controls.Add(this.lblDailyReportTotalCalorie);
             this.panel2.Controls.Add(this.lblDailyReportFoodCount);
             this.panel2.Controls.Add(this.lblDailyReportDay);
             this.panel2.Controls.Add(this.lblDailyReportMealCount);
-            this.panel2.Location = new System.Drawing.Point(345, 136);
+            this.panel2.Location = new System.Drawing.Point(344, 143);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(327, 311);
+            this.panel2.Size = new System.Drawing.Size(331, 305);
             this.panel2.TabIndex = 3;
             // 
             // lblDailyReport
             // 
             this.lblDailyReport.AutoSize = true;
             this.lblDailyReport.BackColor = System.Drawing.Color.Transparent;
-            this.lblDailyReport.Font = new System.Drawing.Font("ISOCPEUR", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblDailyReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.lblDailyReport.ForeColor = System.Drawing.Color.Black;
             this.lblDailyReport.Location = new System.Drawing.Point(0, 0);
             this.lblDailyReport.Name = "lblDailyReport";
-            this.lblDailyReport.Padding = new System.Windows.Forms.Padding(5);
-            this.lblDailyReport.Size = new System.Drawing.Size(126, 31);
+            this.lblDailyReport.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblDailyReport.Size = new System.Drawing.Size(157, 30);
             this.lblDailyReport.TabIndex = 0;
             this.lblDailyReport.Text = "GÜNLÜK RAPOR";
             // 
@@ -212,9 +215,9 @@
             this.lblDailyReportTotalCalorie.AutoSize = true;
             this.lblDailyReportTotalCalorie.BackColor = System.Drawing.Color.Transparent;
             this.lblDailyReportTotalCalorie.ForeColor = System.Drawing.Color.Black;
-            this.lblDailyReportTotalCalorie.Location = new System.Drawing.Point(15, 139);
+            this.lblDailyReportTotalCalorie.Location = new System.Drawing.Point(13, 132);
             this.lblDailyReportTotalCalorie.Name = "lblDailyReportTotalCalorie";
-            this.lblDailyReportTotalCalorie.Size = new System.Drawing.Size(117, 21);
+            this.lblDailyReportTotalCalorie.Size = new System.Drawing.Size(144, 20);
             this.lblDailyReportTotalCalorie.TabIndex = 0;
             this.lblDailyReportTotalCalorie.Text = "TOPLAM KALORİ :";
             // 
@@ -223,9 +226,9 @@
             this.lblDailyReportFoodCount.AutoSize = true;
             this.lblDailyReportFoodCount.BackColor = System.Drawing.Color.Transparent;
             this.lblDailyReportFoodCount.ForeColor = System.Drawing.Color.Black;
-            this.lblDailyReportFoodCount.Location = new System.Drawing.Point(15, 109);
+            this.lblDailyReportFoodCount.Location = new System.Drawing.Point(13, 100);
             this.lblDailyReportFoodCount.Name = "lblDailyReportFoodCount";
-            this.lblDailyReportFoodCount.Size = new System.Drawing.Size(105, 21);
+            this.lblDailyReportFoodCount.Size = new System.Drawing.Size(131, 20);
             this.lblDailyReportFoodCount.TabIndex = 0;
             this.lblDailyReportFoodCount.Text = "YEMEK SAYISI :";
             // 
@@ -234,9 +237,9 @@
             this.lblDailyReportDay.AutoSize = true;
             this.lblDailyReportDay.BackColor = System.Drawing.Color.Transparent;
             this.lblDailyReportDay.ForeColor = System.Drawing.Color.Black;
-            this.lblDailyReportDay.Location = new System.Drawing.Point(15, 49);
+            this.lblDailyReportDay.Location = new System.Drawing.Point(13, 37);
             this.lblDailyReportDay.Name = "lblDailyReportDay";
-            this.lblDailyReportDay.Size = new System.Drawing.Size(43, 21);
+            this.lblDailyReportDay.Size = new System.Drawing.Size(53, 20);
             this.lblDailyReportDay.TabIndex = 0;
             this.lblDailyReportDay.Text = "GÜN :";
             // 
@@ -245,23 +248,27 @@
             this.lblDailyReportMealCount.AutoSize = true;
             this.lblDailyReportMealCount.BackColor = System.Drawing.Color.Transparent;
             this.lblDailyReportMealCount.ForeColor = System.Drawing.Color.Black;
-            this.lblDailyReportMealCount.Location = new System.Drawing.Point(15, 79);
+            this.lblDailyReportMealCount.Location = new System.Drawing.Point(13, 68);
             this.lblDailyReportMealCount.Name = "lblDailyReportMealCount";
-            this.lblDailyReportMealCount.Size = new System.Drawing.Size(97, 21);
+            this.lblDailyReportMealCount.Size = new System.Drawing.Size(123, 20);
             this.lblDailyReportMealCount.TabIndex = 0;
             this.lblDailyReportMealCount.Text = "ÖĞÜN SAYISI :";
             // 
             // frmMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(675, 450);
             this.Controls.Add(this.pnlMainPage);
-            this.Font = new System.Drawing.Font("ISOCTEUR", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(675, 450);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(675, 450);
             this.Name = "frmMainPage";
             this.Text = "frmMainPage";
             this.pnlMainPage.ResumeLayout(false);
