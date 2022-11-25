@@ -102,8 +102,10 @@
             this.Controls.Add(this.flpNavBar);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(829, 509);
@@ -111,6 +113,8 @@
             this.MinimumSize = new System.Drawing.Size(829, 509);
             this.Name = "frmAdmin";
             this.Text = "RUFİT - Admin Paneli";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmMain_HelpButtonClicked);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.flpNavBar.ResumeLayout(false);
             this.ResumeLayout(false);
 

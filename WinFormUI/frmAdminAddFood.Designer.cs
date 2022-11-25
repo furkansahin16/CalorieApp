@@ -131,8 +131,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(354, 341);
             this.MdiChildrenMinimizedAnchorBottom = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(354, 341);
             this.Name = "frmAdminAddFood";
             this.Text = "RUFİT - Yemek Ekle";
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();

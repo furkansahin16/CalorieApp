@@ -76,7 +76,8 @@ namespace WinFormUI
             {
                 using (var ms = new MemoryStream())
                 {
-                    imageIn.Save(ms, imageIn.RawFormat);
+                    Bitmap bmp = new(imageIn);
+                    bmp.Save(ms, imageIn.RawFormat);
                     return ms.ToArray();
                 }
             }
