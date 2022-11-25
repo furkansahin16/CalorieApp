@@ -29,22 +29,17 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblHeader = new System.Windows.Forms.Label();
             this.cmbMealType = new System.Windows.Forms.ComboBox();
             this.cmbMealCategory = new System.Windows.Forms.ComboBox();
             this.cmbFood = new System.Windows.Forms.ComboBox();
             this.lblDataGridView = new System.Windows.Forms.Label();
             this.dgvDailyReport = new System.Windows.Forms.DataGridView();
-            this.clmCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmImg = new System.Windows.Forms.DataGridViewImageColumn();
-            this.clmPiece = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmCalorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstMeal = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pbProduct = new System.Windows.Forms.PictureBox();
@@ -56,6 +51,12 @@
             this.lblCategory = new System.Windows.Forms.Label();
             this.lblCalorieCal = new System.Windows.Forms.Label();
             this.lblMealType = new System.Windows.Forms.Label();
+            this.clmCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmImg = new System.Windows.Forms.DataGridViewImageColumn();
+            this.clmPiece = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmCalorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDailyReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmdPortion)).BeginInit();
@@ -118,11 +119,20 @@
             // 
             this.dgvDailyReport.AllowUserToAddRows = false;
             this.dgvDailyReport.AllowUserToDeleteRows = false;
+            this.dgvDailyReport.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.Format = "N0";
             dataGridViewCellStyle1.NullValue = null;
             this.dgvDailyReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDailyReport.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dgvDailyReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDailyReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDailyReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDailyReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCategory,
@@ -131,80 +141,28 @@
             this.clmPiece,
             this.clmCalorie,
             this.clmId});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDailyReport.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDailyReport.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDailyReport.Location = new System.Drawing.Point(155, 207);
             this.dgvDailyReport.MultiSelect = false;
             this.dgvDailyReport.Name = "dgvDailyReport";
             this.dgvDailyReport.ReadOnly = true;
             this.dgvDailyReport.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = null;
-            this.dgvDailyReport.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Format = "N0";
+            dataGridViewCellStyle6.NullValue = null;
+            this.dgvDailyReport.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDailyReport.RowTemplate.Height = 40;
             this.dgvDailyReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDailyReport.Size = new System.Drawing.Size(501, 220);
             this.dgvDailyReport.TabIndex = 3;
             this.dgvDailyReport.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvDailyReport_CellPainting);
             this.dgvDailyReport.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvDailyReport_DataError);
-            // 
-            // clmCategory
-            // 
-            this.clmCategory.HeaderText = "Kategori";
-            this.clmCategory.Name = "clmCategory";
-            this.clmCategory.ReadOnly = true;
-            this.clmCategory.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clmCategory.Width = 120;
-            // 
-            // clmFood
-            // 
-            this.clmFood.HeaderText = "Yemek";
-            this.clmFood.Name = "clmFood";
-            this.clmFood.ReadOnly = true;
-            this.clmFood.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clmFood.Width = 150;
-            // 
-            // clmImg
-            // 
-            this.clmImg.HeaderText = "Resim";
-            this.clmImg.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.clmImg.Name = "clmImg";
-            this.clmImg.ReadOnly = true;
-            // 
-            // clmPiece
-            // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.clmPiece.DefaultCellStyle = dataGridViewCellStyle2;
-            this.clmPiece.HeaderText = "Gram";
-            this.clmPiece.Name = "clmPiece";
-            this.clmPiece.ReadOnly = true;
-            this.clmPiece.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clmPiece.Width = 65;
-            // 
-            // clmCalorie
-            // 
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.clmCalorie.DefaultCellStyle = dataGridViewCellStyle3;
-            this.clmCalorie.HeaderText = "Kalori";
-            this.clmCalorie.Name = "clmCalorie";
-            this.clmCalorie.ReadOnly = true;
-            this.clmCalorie.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clmCalorie.Width = 65;
-            // 
-            // clmId
-            // 
-            this.clmId.HeaderText = "ID";
-            this.clmId.Name = "clmId";
-            this.clmId.ReadOnly = true;
-            this.clmId.Visible = false;
             // 
             // lstMeal
             // 
@@ -372,6 +330,58 @@
             this.lblMealType.Size = new System.Drawing.Size(45, 16);
             this.lblMealType.TabIndex = 0;
             this.lblMealType.Text = "Öğün :";
+            // 
+            // clmCategory
+            // 
+            this.clmCategory.HeaderText = "Kategori";
+            this.clmCategory.Name = "clmCategory";
+            this.clmCategory.ReadOnly = true;
+            this.clmCategory.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clmCategory.Width = 120;
+            // 
+            // clmFood
+            // 
+            this.clmFood.HeaderText = "Yemek";
+            this.clmFood.Name = "clmFood";
+            this.clmFood.ReadOnly = true;
+            this.clmFood.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clmFood.Width = 150;
+            // 
+            // clmImg
+            // 
+            this.clmImg.HeaderText = "Resim";
+            this.clmImg.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.clmImg.Name = "clmImg";
+            this.clmImg.ReadOnly = true;
+            // 
+            // clmPiece
+            // 
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.clmPiece.DefaultCellStyle = dataGridViewCellStyle3;
+            this.clmPiece.HeaderText = "Gram";
+            this.clmPiece.Name = "clmPiece";
+            this.clmPiece.ReadOnly = true;
+            this.clmPiece.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clmPiece.Width = 65;
+            // 
+            // clmCalorie
+            // 
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.clmCalorie.DefaultCellStyle = dataGridViewCellStyle4;
+            this.clmCalorie.HeaderText = "Kalori";
+            this.clmCalorie.Name = "clmCalorie";
+            this.clmCalorie.ReadOnly = true;
+            this.clmCalorie.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clmCalorie.Width = 65;
+            // 
+            // clmId
+            // 
+            this.clmId.HeaderText = "ID";
+            this.clmId.Name = "clmId";
+            this.clmId.ReadOnly = true;
+            this.clmId.Visible = false;
             // 
             // frmAddMeal
             // 

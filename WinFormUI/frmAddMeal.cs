@@ -124,6 +124,7 @@ namespace WinFormUI
         }
         private Image ByteArrayToImage(byte[] byteArr)
         {
+            if (byteArr == null) return null;
             using (MemoryStream ms = new MemoryStream(byteArr))
             {
                 return Image.FromStream(ms);

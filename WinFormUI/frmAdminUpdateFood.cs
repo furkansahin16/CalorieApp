@@ -31,6 +31,7 @@ namespace WinFormUI
 
         private Image ByteArrayToImage(byte[] byteArr)
         {
+            if (byteArr == null) return null;
             MemoryStream ms = new MemoryStream(byteArr, 0, byteArr.Length);
             ms.Write(byteArr, 0, byteArr.Length);
             Image img = Image.FromStream(ms, true);
