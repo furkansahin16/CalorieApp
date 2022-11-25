@@ -57,12 +57,12 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(16, 28);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(226, 29);
             this.cmbCategory.TabIndex = 1;
-            this.cmbCategory.Text = "Kategori";
             // 
             // mnsFood
             // 

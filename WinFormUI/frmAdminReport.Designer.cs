@@ -112,12 +112,12 @@
             // 
             // cmbMealType
             // 
+            this.cmbMealType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMealType.FormattingEnabled = true;
             this.cmbMealType.Location = new System.Drawing.Point(65, 67);
             this.cmbMealType.Name = "cmbMealType";
             this.cmbMealType.Size = new System.Drawing.Size(257, 29);
             this.cmbMealType.TabIndex = 4;
-            this.cmbMealType.Text = "Öğün";
             this.cmbMealType.SelectedIndexChanged += new System.EventHandler(this.cmbMealType_SelectedIndexChanged);
             // 
             // panel2
