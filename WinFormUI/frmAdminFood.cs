@@ -2,15 +2,6 @@
 using Business.DependencyResolver.Autofac;
 using Entities.VMs.ProductTypeVMs;
 using Entities.VMs.ProductVMs;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace WinFormUI
 {
@@ -18,7 +9,6 @@ namespace WinFormUI
     {
         IProductService _productService;
         IProductTypeService _productTypeService;
-        List<ProductTypeVm> _categories;
         List<ProductVm> _products;
         ProductVm _activeProduct;
 
@@ -30,7 +20,7 @@ namespace WinFormUI
 
             _productService = InstanceFactory.GetInstance<IProductService>();
             _productTypeService = InstanceFactory.GetInstance<IProductTypeService>();
-            _categories = _productTypeService.GetAll();
+
             FillCategoryList();
             FillProducts();
         }
@@ -51,7 +41,7 @@ namespace WinFormUI
 
         private void FillCategoryList()
         {
-            cmbCategory.DataSource = _categories;
+            cmbCategory.DataSource = _productTypeService.GetAll();
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)
@@ -63,9 +53,9 @@ namespace WinFormUI
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (_activeProduct == null)
+            if (dgvMealView.CurrentRow == null)
             {
-                MessageBox.Show("Ürün seçiniz");
+                MessageBox.Show("Ürün seçiniz","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
             frmAdminUpdateFood frm = new(_activeProduct);
@@ -83,6 +73,7 @@ namespace WinFormUI
         {
             frmAdminCategory frm = new();
             frm.ShowDialog();
+            FillCategoryList();
         }
 
         private void btnFilter_Click(object sender, EventArgs e)
@@ -109,6 +100,7 @@ namespace WinFormUI
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
+            if (dgvMealView.CurrentRow == null) return;
             _productService.Delete(Convert.ToInt32(dgvMealView.CurrentRow.Cells[5].Value));
             FillProducts();
         }

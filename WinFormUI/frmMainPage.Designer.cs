@@ -41,7 +41,7 @@
             this.lblLastMealDate = new System.Windows.Forms.Label();
             this.lblLastMealName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDailyReport = new System.Windows.Forms.Label();
             this.lblDailyReportTotalCalorie = new System.Windows.Forms.Label();
             this.lblDailyReportFoodCount = new System.Windows.Forms.Label();
             this.lblDailyReportDay = new System.Windows.Forms.Label();
@@ -150,8 +150,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label3.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("ISOCPEUR", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5);
@@ -183,7 +184,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblDailyReport);
             this.panel2.Controls.Add(this.lblDailyReportTotalCalorie);
             this.panel2.Controls.Add(this.lblDailyReportFoodCount);
             this.panel2.Controls.Add(this.lblDailyReportDay);
@@ -193,17 +194,18 @@
             this.panel2.Size = new System.Drawing.Size(327, 311);
             this.panel2.TabIndex = 3;
             // 
-            // label2
+            // lblDailyReport
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label2.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(5);
-            this.label2.Size = new System.Drawing.Size(126, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "GÜNLÜK RAPOR";
+            this.lblDailyReport.AutoSize = true;
+            this.lblDailyReport.BackColor = System.Drawing.Color.Transparent;
+            this.lblDailyReport.Font = new System.Drawing.Font("ISOCPEUR", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblDailyReport.ForeColor = System.Drawing.Color.Black;
+            this.lblDailyReport.Location = new System.Drawing.Point(0, 0);
+            this.lblDailyReport.Name = "lblDailyReport";
+            this.lblDailyReport.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDailyReport.Size = new System.Drawing.Size(126, 31);
+            this.lblDailyReport.TabIndex = 0;
+            this.lblDailyReport.Text = "GÜNLÜK RAPOR";
             // 
             // lblDailyReportTotalCalorie
             // 
@@ -282,7 +284,7 @@
         private Label lblDailyReportDay;
         private Label lblLastMealDate;
         private Label label3;
-        private Label label2;
+        private Label lblDailyReport;
         private Label lblDailyReportTotalCalorie;
         private Panel panel3;
         private Panel panel2;
