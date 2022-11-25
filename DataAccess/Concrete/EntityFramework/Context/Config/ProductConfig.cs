@@ -41,7 +41,7 @@ namespace Entities.Config
             builder.Property(x => x.Image).IsRequired(false);
 
             //builder.HasData(
-            //    new Product { Id = 1, ProductTypeID = 1, ProductName = "Antrikot", UnitCalorie = 1.21, Image = ReadFile("Resources/antrikot.png") },
+            //    new Product { Id = 1, ProductTypeID = 1, ProductName = "Antrikot", UnitCalorie = 1.21, Image = ReadFile("Resources/antrikot.png") }
             //    new Product { Id = 2, ProductTypeID = 1, ProductName = "Biftek", UnitCalorie = 2.42, Image = ReadFile("Resources/biftek.png") },
             //    new Product { Id = 3, ProductTypeID = 1, ProductName = "Bonfile", UnitCalorie = 1.38, Image = ReadFile("Resources/bonfile.png") },
             //    new Product { Id = 4, ProductTypeID = 1, ProductName = "Dana Kıyma", UnitCalorie = 2.46, Image = ReadFile("Resources/dana kıyma.png") }

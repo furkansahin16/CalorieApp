@@ -169,10 +169,9 @@
             // 
             this.lblCalorieValue.AutoSize = true;
             this.lblCalorieValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblCalorieValue.Font = new System.Drawing.Font("ISOCPEUR", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCalorieValue.Location = new System.Drawing.Point(222, 411);
             this.lblCalorieValue.Name = "lblCalorieValue";
-            this.lblCalorieValue.Size = new System.Drawing.Size(0, 24);
+            this.lblCalorieValue.Size = new System.Drawing.Size(0, 20);
             this.lblCalorieValue.TabIndex = 2;
             // 
             // btnGetReport
@@ -263,10 +262,9 @@
             // 
             this.lblMealCalorieValue.AutoSize = true;
             this.lblMealCalorieValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblMealCalorieValue.Font = new System.Drawing.Font("ISOCPEUR", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMealCalorieValue.Location = new System.Drawing.Point(222, 387);
             this.lblMealCalorieValue.Name = "lblMealCalorieValue";
-            this.lblMealCalorieValue.Size = new System.Drawing.Size(0, 24);
+            this.lblMealCalorieValue.Size = new System.Drawing.Size(0, 20);
             this.lblMealCalorieValue.TabIndex = 2;
             // 
             // btnDeleteMeal
