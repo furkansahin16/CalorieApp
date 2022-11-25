@@ -12,12 +12,10 @@ namespace Entities.Config
             builder.Property(x=> x.TypeName).IsRequired(true).HasMaxLength(25);
             builder.HasData(
                 new MealType { Id=1, TypeName="Kahvaltı" },
-                new MealType { Id=2, TypeName="AraÖğün" },
-                new MealType { Id=3, TypeName="ÖğleYemeği" },
-                new MealType { Id=4, TypeName="AkşamYemeği" }
-                
+                new MealType { Id=2, TypeName="Ara Öğün" },
+                new MealType { Id=3, TypeName="Öğle Yemeği" },
+                new MealType { Id=4, TypeName="Akşam Yemeği" }
                 );
-            
         }
     }
 
