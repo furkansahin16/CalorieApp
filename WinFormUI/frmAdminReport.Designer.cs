@@ -63,10 +63,11 @@
             this.lvTotal.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmProduct,
             this.clmPiece});
+            this.lvTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvTotal.ForeColor = System.Drawing.Color.White;
             this.lvTotal.Location = new System.Drawing.Point(33, 67);
             this.lvTotal.Name = "lvTotal";
-            this.lvTotal.Size = new System.Drawing.Size(345, 307);
+            this.lvTotal.Size = new System.Drawing.Size(345, 325);
             this.lvTotal.TabIndex = 4;
             this.lvTotal.UseCompatibleStateImageBehavior = false;
             this.lvTotal.View = System.Windows.Forms.View.Details;
@@ -85,10 +86,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("ISOCPEUR", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(65, 9);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(49, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 28);
+            this.label3.Size = new System.Drawing.Size(311, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Toplamda en çok hangi ürün";
             // 
@@ -103,10 +104,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("ISOCPEUR", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(65, 8);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(61, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 28);
+            this.label1.Size = new System.Drawing.Size(282, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Öğün Bazlı Yemek Listesi";
             // 
@@ -116,7 +117,7 @@
             this.cmbMealType.FormattingEnabled = true;
             this.cmbMealType.Location = new System.Drawing.Point(65, 67);
             this.cmbMealType.Name = "cmbMealType";
-            this.cmbMealType.Size = new System.Drawing.Size(257, 29);
+            this.cmbMealType.Size = new System.Drawing.Size(257, 28);
             this.cmbMealType.TabIndex = 4;
             this.cmbMealType.SelectedIndexChanged += new System.EventHandler(this.cmbMealType_SelectedIndexChanged);
             // 
@@ -139,10 +140,11 @@
             this.lvTotalByMeal.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.lvTotalByMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvTotalByMeal.ForeColor = System.Drawing.Color.White;
             this.lvTotalByMeal.Location = new System.Drawing.Point(25, 148);
             this.lvTotalByMeal.Name = "lvTotalByMeal";
-            this.lvTotalByMeal.Size = new System.Drawing.Size(344, 226);
+            this.lvTotalByMeal.Size = new System.Drawing.Size(344, 244);
             this.lvTotalByMeal.TabIndex = 5;
             this.lvTotalByMeal.UseCompatibleStateImageBehavior = false;
             this.lvTotalByMeal.View = System.Windows.Forms.View.Details;
@@ -167,7 +169,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAdminReport";

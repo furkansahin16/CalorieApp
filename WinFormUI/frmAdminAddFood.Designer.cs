@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminAddFood));
             this.txtFoodName = new System.Windows.Forms.TextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -40,19 +41,21 @@
             // 
             // txtFoodName
             // 
-            this.txtFoodName.Location = new System.Drawing.Point(26, 76);
+            this.txtFoodName.Location = new System.Drawing.Point(33, 72);
+            this.txtFoodName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtFoodName.Name = "txtFoodName";
             this.txtFoodName.PlaceholderText = "Yemek Adı";
-            this.txtFoodName.Size = new System.Drawing.Size(240, 27);
+            this.txtFoodName.Size = new System.Drawing.Size(268, 26);
             this.txtFoodName.TabIndex = 0;
             // 
             // cmbCategory
             // 
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(26, 28);
+            this.cmbCategory.Location = new System.Drawing.Point(33, 27);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(240, 29);
+            this.cmbCategory.Size = new System.Drawing.Size(268, 28);
             this.cmbCategory.TabIndex = 1;
             // 
             // btnAdd
@@ -63,9 +66,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(89, 231);
+            this.btnAdd.Location = new System.Drawing.Point(112, 247);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(109, 40);
+            this.btnAdd.Size = new System.Drawing.Size(114, 39);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -79,9 +83,10 @@
             this.btnImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImg.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnImg.ForeColor = System.Drawing.Color.White;
-            this.btnImg.Location = new System.Drawing.Point(167, 171);
+            this.btnImg.Location = new System.Drawing.Point(174, 189);
+            this.btnImg.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnImg.Name = "btnImg";
-            this.btnImg.Size = new System.Drawing.Size(99, 40);
+            this.btnImg.Size = new System.Drawing.Size(127, 39);
             this.btnImg.TabIndex = 2;
             this.btnImg.Text = "Resim Ekle";
             this.btnImg.UseVisualStyleBackColor = false;
@@ -92,27 +97,29 @@
             this.pbProductImage.BackColor = System.Drawing.Color.Transparent;
             this.pbProductImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbProductImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbProductImage.Location = new System.Drawing.Point(26, 161);
+            this.pbProductImage.Location = new System.Drawing.Point(33, 153);
+            this.pbProductImage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pbProductImage.Name = "pbProductImage";
-            this.pbProductImage.Size = new System.Drawing.Size(60, 60);
+            this.pbProductImage.Size = new System.Drawing.Size(75, 75);
             this.pbProductImage.TabIndex = 4;
             this.pbProductImage.TabStop = false;
             // 
             // nmdUnitCalorie
             // 
             this.nmdUnitCalorie.DecimalPlaces = 2;
-            this.nmdUnitCalorie.Location = new System.Drawing.Point(26, 119);
+            this.nmdUnitCalorie.Location = new System.Drawing.Point(33, 113);
+            this.nmdUnitCalorie.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nmdUnitCalorie.Name = "nmdUnitCalorie";
-            this.nmdUnitCalorie.Size = new System.Drawing.Size(240, 27);
+            this.nmdUnitCalorie.Size = new System.Drawing.Size(270, 26);
             this.nmdUnitCalorie.TabIndex = 5;
             // 
             // frmAdminAddFood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WinFormUI.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(294, 283);
+            this.ClientSize = new System.Drawing.Size(338, 302);
             this.Controls.Add(this.nmdUnitCalorie);
             this.Controls.Add(this.pbProductImage);
             this.Controls.Add(this.btnImg);
@@ -120,13 +127,14 @@
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.txtFoodName);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MdiChildrenMinimizedAnchorBottom = false;
             this.MinimizeBox = false;
             this.Name = "frmAdminAddFood";
-            this.ShowIcon = false;
-            this.Text = "Yemek Ekle";
+            this.Text = "RUFİT - Yemek Ekle";
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmdUnitCalorie)).EndInit();
             this.ResumeLayout(false);

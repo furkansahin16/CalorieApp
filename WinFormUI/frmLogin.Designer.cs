@@ -109,7 +109,7 @@
             // 
             this.lblAppName.AutoSize = true;
             this.lblAppName.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAppName.ForeColor = System.Drawing.Color.Olive;
+            this.lblAppName.ForeColor = System.Drawing.Color.Chocolate;
             this.lblAppName.Location = new System.Drawing.Point(119, 86);
             this.lblAppName.Name = "lblAppName";
             this.lblAppName.Size = new System.Drawing.Size(99, 33);
@@ -181,7 +181,7 @@
             this.MinimumSize = new System.Drawing.Size(354, 399);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kalori Takip";
+            this.Text = "RUFIT - Giriş";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

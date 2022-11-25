@@ -163,7 +163,7 @@
             this.MinimumSize = new System.Drawing.Size(422, 380);
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kayıt Ol";
+            this.Text = "RUFİT - Kayıt Ol";
             this.ResumeLayout(false);
             this.PerformLayout();
 

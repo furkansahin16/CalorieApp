@@ -30,16 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlNavigation = new System.Windows.Forms.Panel();
+            this.lblAppName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnUpdateMeal = new System.Windows.Forms.Button();
             this.btnAddMeal = new System.Windows.Forms.Button();
             this.btnMainPage = new System.Windows.Forms.Button();
             this.lblCurrentDate = new System.Windows.Forms.Label();
-            this.lblActiveUser = new System.Windows.Forms.Label();
             this.pnlNavItems = new System.Windows.Forms.Panel();
-            this.lblAppName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,21 +56,46 @@
             this.pnlNavigation.Controls.Add(this.btnAddMeal);
             this.pnlNavigation.Controls.Add(this.btnMainPage);
             this.pnlNavigation.Controls.Add(this.lblCurrentDate);
-            this.pnlNavigation.Controls.Add(this.lblActiveUser);
             this.pnlNavigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNavigation.Location = new System.Drawing.Point(0, 0);
             this.pnlNavigation.Name = "pnlNavigation";
             this.pnlNavigation.Size = new System.Drawing.Size(275, 450);
             this.pnlNavigation.TabIndex = 0;
             // 
+            // lblAppName
+            // 
+            this.lblAppName.AutoSize = true;
+            this.lblAppName.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAppName.ForeColor = System.Drawing.Color.Chocolate;
+            this.lblAppName.Location = new System.Drawing.Point(95, 82);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(99, 33);
+            this.lblAppName.TabIndex = 7;
+            this.lblAppName.Text = "RUFiT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinFormUI.Properties.Resources.MainLogo;
+            this.pictureBox1.InitialImage = global::WinFormUI.Properties.Resources.MainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(100, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(85, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(191, 405);
+            this.btnClose.Location = new System.Drawing.Point(90, 360);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(78, 33);
+            this.btnClose.Size = new System.Drawing.Size(98, 45);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Çıkış";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -88,7 +112,7 @@
             this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAccount.ForeColor = System.Drawing.Color.White;
-            this.btnAccount.Location = new System.Drawing.Point(48, 329);
+            this.btnAccount.Location = new System.Drawing.Point(48, 302);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Size = new System.Drawing.Size(182, 45);
             this.btnAccount.TabIndex = 4;
@@ -108,7 +132,7 @@
             this.btnUpdateMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateMeal.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateMeal.Location = new System.Drawing.Point(48, 263);
+            this.btnUpdateMeal.Location = new System.Drawing.Point(48, 244);
             this.btnUpdateMeal.Name = "btnUpdateMeal";
             this.btnUpdateMeal.Size = new System.Drawing.Size(182, 45);
             this.btnUpdateMeal.TabIndex = 3;
@@ -128,7 +152,7 @@
             this.btnAddMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddMeal.ForeColor = System.Drawing.Color.White;
-            this.btnAddMeal.Location = new System.Drawing.Point(48, 197);
+            this.btnAddMeal.Location = new System.Drawing.Point(48, 186);
             this.btnAddMeal.Name = "btnAddMeal";
             this.btnAddMeal.Size = new System.Drawing.Size(182, 45);
             this.btnAddMeal.TabIndex = 2;
@@ -149,7 +173,7 @@
             this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMainPage.ForeColor = System.Drawing.Color.White;
-            this.btnMainPage.Location = new System.Drawing.Point(48, 131);
+            this.btnMainPage.Location = new System.Drawing.Point(48, 128);
             this.btnMainPage.Name = "btnMainPage";
             this.btnMainPage.Size = new System.Drawing.Size(182, 45);
             this.btnMainPage.TabIndex = 1;
@@ -164,23 +188,11 @@
             this.lblCurrentDate.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCurrentDate.ForeColor = System.Drawing.Color.Black;
-            this.lblCurrentDate.Location = new System.Drawing.Point(12, 405);
+            this.lblCurrentDate.Location = new System.Drawing.Point(12, 423);
             this.lblCurrentDate.Name = "lblCurrentDate";
             this.lblCurrentDate.Size = new System.Drawing.Size(41, 15);
             this.lblCurrentDate.TabIndex = 0;
             this.lblCurrentDate.Text = "Tarih :";
-            // 
-            // lblActiveUser
-            // 
-            this.lblActiveUser.AutoSize = true;
-            this.lblActiveUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblActiveUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblActiveUser.ForeColor = System.Drawing.Color.Black;
-            this.lblActiveUser.Location = new System.Drawing.Point(12, 425);
-            this.lblActiveUser.Name = "lblActiveUser";
-            this.lblActiveUser.Size = new System.Drawing.Size(60, 15);
-            this.lblActiveUser.TabIndex = 0;
-            this.lblActiveUser.Text = "Kullanıcı :";
             // 
             // pnlNavItems
             // 
@@ -189,29 +201,6 @@
             this.pnlNavItems.Name = "pnlNavItems";
             this.pnlNavItems.Size = new System.Drawing.Size(675, 450);
             this.pnlNavItems.TabIndex = 2;
-            // 
-            // lblAppName
-            // 
-            this.lblAppName.AutoSize = true;
-            this.lblAppName.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAppName.ForeColor = System.Drawing.Color.Olive;
-            this.lblAppName.Location = new System.Drawing.Point(88, 86);
-            this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(99, 33);
-            this.lblAppName.TabIndex = 7;
-            this.lblAppName.Text = "RUFiT";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WinFormUI.Properties.Resources.MainLogo;
-            this.pictureBox1.InitialImage = global::WinFormUI.Properties.Resources.MainLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
@@ -258,7 +247,6 @@
         private ComboBox comboBox1;
         private Panel pnlNavItems;
         private Label lblCurrentDate;
-        private Label lblActiveUser;
         private Label lblAppName;
         private PictureBox pictureBox1;
     }

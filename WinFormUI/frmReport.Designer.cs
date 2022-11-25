@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpDay = new System.Windows.Forms.DateTimePicker();
             this.dgvMealView = new System.Windows.Forms.DataGridView();
             this.clmCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,12 +56,12 @@
             this.dtpDay.CalendarTitleBackColor = System.Drawing.SystemColors.Window;
             this.dtpDay.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
             this.dtpDay.CalendarTrailingForeColor = System.Drawing.SystemColors.Window;
-            this.dtpDay.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dtpDay.Location = new System.Drawing.Point(35, 29);
             this.dtpDay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpDay.Name = "dtpDay";
-            this.dtpDay.Size = new System.Drawing.Size(210, 27);
+            this.dtpDay.Size = new System.Drawing.Size(210, 26);
             this.dtpDay.TabIndex = 1;
             // 
             // dgvMealView
@@ -71,6 +72,14 @@
             this.dgvMealView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvMealView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dgvMealView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMealView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMealView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMealView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCategory,
@@ -85,22 +94,22 @@
             this.dgvMealView.Name = "dgvMealView";
             this.dgvMealView.ReadOnly = true;
             this.dgvMealView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Format = "N1";
-            dataGridViewCellStyle1.NullValue = "1";
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMealView.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Format = "N1";
+            dataGridViewCellStyle2.NullValue = "1";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMealView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMealView.RowHeadersVisible = false;
             this.dgvMealView.RowHeadersWidth = 40;
             this.dgvMealView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvMealView.RowTemplate.Height = 40;
             this.dgvMealView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMealView.Size = new System.Drawing.Size(441, 294);
+            this.dgvMealView.Size = new System.Drawing.Size(441, 300);
             this.dgvMealView.TabIndex = 3;
             this.dgvMealView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvMealView_CellPainting);
             // 
@@ -150,10 +159,9 @@
             // 
             this.lblDailyCalorie.AutoSize = true;
             this.lblDailyCalorie.BackColor = System.Drawing.Color.Transparent;
-            this.lblDailyCalorie.Font = new System.Drawing.Font("ISOCPEUR", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDailyCalorie.Location = new System.Drawing.Point(35, 411);
+            this.lblDailyCalorie.Location = new System.Drawing.Point(34, 415);
             this.lblDailyCalorie.Name = "lblDailyCalorie";
-            this.lblDailyCalorie.Size = new System.Drawing.Size(181, 24);
+            this.lblDailyCalorie.Size = new System.Drawing.Size(167, 20);
             this.lblDailyCalorie.TabIndex = 2;
             this.lblDailyCalorie.Text = "Günlük Toplam Kalori :";
             // 
@@ -176,7 +184,7 @@
             this.btnGetReport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnGetReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnGetReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGetReport.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGetReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGetReport.ForeColor = System.Drawing.Color.White;
             this.btnGetReport.Location = new System.Drawing.Point(279, 29);
             this.btnGetReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -196,7 +204,7 @@
             this.btnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(313, 400);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -216,7 +224,7 @@
             this.btnDeleteProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnDeleteProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteProduct.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
             this.btnDeleteProduct.Location = new System.Drawing.Point(541, 400);
             this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(5, 4, 3, 4);
@@ -231,13 +239,13 @@
             // 
             this.lstMealType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.lstMealType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstMealType.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lstMealType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstMealType.ForeColor = System.Drawing.Color.White;
             this.lstMealType.FormattingEnabled = true;
-            this.lstMealType.ItemHeight = 21;
+            this.lstMealType.ItemHeight = 20;
             this.lstMealType.Location = new System.Drawing.Point(35, 80);
             this.lstMealType.Name = "lstMealType";
-            this.lstMealType.Size = new System.Drawing.Size(139, 294);
+            this.lstMealType.Size = new System.Drawing.Size(144, 300);
             this.lstMealType.TabIndex = 6;
             this.lstMealType.SelectedIndexChanged += new System.EventHandler(this.lstMealType_SelectedIndexChanged);
             // 
@@ -245,10 +253,9 @@
             // 
             this.lblMealCalorie.AutoSize = true;
             this.lblMealCalorie.BackColor = System.Drawing.Color.Transparent;
-            this.lblMealCalorie.Font = new System.Drawing.Font("ISOCPEUR", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMealCalorie.Location = new System.Drawing.Point(35, 387);
+            this.lblMealCalorie.Location = new System.Drawing.Point(34, 391);
             this.lblMealCalorie.Name = "lblMealCalorie";
-            this.lblMealCalorie.Size = new System.Drawing.Size(167, 24);
+            this.lblMealCalorie.Size = new System.Drawing.Size(155, 20);
             this.lblMealCalorie.TabIndex = 2;
             this.lblMealCalorie.Text = "Öğün Toplam Kalori :";
             // 
@@ -271,7 +278,7 @@
             this.btnDeleteMeal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnDeleteMeal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnDeleteMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteMeal.Font = new System.Drawing.Font("ISOCPEUR", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeleteMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDeleteMeal.ForeColor = System.Drawing.Color.White;
             this.btnDeleteMeal.Location = new System.Drawing.Point(427, 400);
             this.btnDeleteMeal.Margin = new System.Windows.Forms.Padding(5, 4, 3, 4);
@@ -300,10 +307,12 @@
             this.Controls.Add(this.dgvMealView);
             this.Controls.Add(this.dtpDay);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("ISOCPEUR", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(675, 450);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(675, 450);
             this.Name = "frmReport";
             this.Text = "frmReport";

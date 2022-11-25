@@ -137,7 +137,7 @@
             // clmFoodName
             // 
             this.clmFoodName.Text = "Yemek";
-            this.clmFoodName.Width = 120;
+            this.clmFoodName.Width = 115;
             // 
             // clmPortion
             // 
@@ -264,7 +264,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(675, 450);
             this.MinimizeBox = false;

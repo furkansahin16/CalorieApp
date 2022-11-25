@@ -18,7 +18,7 @@ namespace WinFormUI
         {
             CheckOpen(_frmMainPage);
             lblCurrentDate.Text = "Tarih : " + DateTime.Now.ToString("D");
-            lblActiveUser.Text = "Kullanýcý : " + CurrentUser.UserName;
+            this.Text += " - " + CurrentUser.UserName;
         }
 
         private void btnNavigation_Click(object sender, EventArgs e)

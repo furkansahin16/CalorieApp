@@ -2,15 +2,7 @@
 using Business.DependencyResolver.Autofac;
 using Entities.Dtos.Product;
 using Entities.VMs.ProductVMs;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace WinFormUI
 {
@@ -34,14 +26,16 @@ namespace WinFormUI
             nmdUnitCalorie.Value = (decimal)_product.UnitCalorie;
             checkBox1.Checked = _product.isActive;
             pbProductImage.Image = ByteArrayToImage(_product.Image);
+            pbProductImage.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private Image ByteArrayToImage(byte[] byteArr)
         {
-            using (MemoryStream ms = new MemoryStream(byteArr))
-            {
-                return Image.FromStream(ms);
-            }
+            MemoryStream ms = new MemoryStream(byteArr, 0, byteArr.Length);
+            ms.Write(byteArr, 0, byteArr.Length);
+            Image img = Image.FromStream(ms, true);
+            ms.Close();
+            return img;
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -76,7 +70,7 @@ namespace WinFormUI
             }
         }
 
-        private byte[] ImageToByteArray(System.Drawing.Image imageIn)
+        private byte[] ImageToByteArray(Image imageIn)
         {
             if (imageIn != null)
             {
@@ -89,6 +83,6 @@ namespace WinFormUI
             return null;
         }
 
-       
+
     }
 }
